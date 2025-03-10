@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMPLOYEE MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="https://cloudvandana.com/"
+          target="_blank"
+        >
+          <i class="bi bi-bootstrap"></i> CloudVandana
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../ProfileCard.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../task2/index.html">Task 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Task 3</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../todolist/index.html">Task 4</a></li>
+            <li class="nav-item"><a class="nav-link" href="./task 5/index.html">Task 5</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container d-flex flex-column align-items-center">
+      <h2 class="mb-3">
+        OBJECT-ORIENTED PROGRAMMING - EMPLOYEE MANAGEMENT SYSTEM
+      </h2>
+
+      <textarea id="myText" class="form-control mb-3" rows="4" cols="40">
+
+import java.util.Scanner;
+
+class EmployeeManagement {
+    private int id;
+    private String name;
+    private double salary;
+
+    public EmployeeManagement()
+    {}
+    
+    public EmployeeManagement(int id, String name, double salary) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public void displayDetails() {
+        
+        System.out.println("ID: " + id + ", Name: " + name + ", Salary: " + salary);
+    }
+
+    public static void main(String[] args) {
+     
+        EmployeeManagement emp1 = new EmployeeManagement(1, "Radhe", 30000);
+        EmployeeManagement emp2 = new EmployeeManagement(2, "Raj", 50000);
+        EmployeeManagement emp3 = new EmployeeManagement(3, "Priya", 60000);
+        System.out.println("==========Employee details==========");
+        emp1.displayDetails();
+        emp2.displayDetails();
+        emp3.displayDetails();
+        System.out.println("==========Thank you ==========");
+        
+        
+    }
+}
+        
+      </textarea>
+      <button class="btn-copy" onclick="copyText()">Copy Text</button>
+    </div>
+    <ol>
+      <h4>Steps to Run the Java Code</h4>
+      <li>First, click on "Copy Text".</li>
+      <li>Copy the code.</li>
+      <li>Paste and run it in any Java compiler.</li>
+    </ol>
+    <script src="index.js"></script>
+  </body>
+</html>
